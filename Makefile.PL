@@ -1,0 +1,7 @@
+use ExtUtils::MakeMaker;
+
+WriteMakefile(
+	NAME			=> 'Games::Nintendo::Mario',
+	VERSION_FROM	=> 'lib/Games/Nintendo/Mario.pm'
+);
+
