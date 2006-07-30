@@ -2,7 +2,7 @@
 
 package Games::Nintendo::Mario::NSMB;
 
-our $VERSION = '0.10';
+our $VERSION = '0.200';
 
 use base qw(Games::Nintendo::Mario);
 
