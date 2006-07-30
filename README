@@ -1,0 +1,6 @@
+README for Games::Nintendo::Mario
+
+This module provides a base class for representing the Mario Brothers from
+Nintendo's long-running Mario franchise of games. Each Mario object keeps track
+of the plumber's current state and can be damaged or given powerups to change
+his state.
