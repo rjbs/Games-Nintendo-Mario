@@ -14,24 +14,24 @@ sub _states { qw[normal super fire] }
 sub _items  { qw[mushroom flower] }
 
 sub _goto_hash { 
-	{
-		damage => {
-			normal	=> 'dead',
-			_else	=> 'normal'
-		},
-		mushroom => {
-			flower	=> 'fire',
-			_else	=> 'super',
-		},
-		flower => {
-			normal	=> 'super',
-			_else	=> 'fire'
-		}
-	}
+  {
+    damage => {
+      normal => 'dead',
+      _else  => 'normal'
+    },
+    mushroom => {
+      fire  => 'fire',
+      _else => 'super',
+    },
+    flower => {
+      normal => 'super',
+      _else  => 'fire'
+    }
+  }
 }
 
 sub games {
-	return ('Super Mario Bros.');
+  return ('Super Mario Bros.');
 }
 
 "It's-a me!  Mario!";

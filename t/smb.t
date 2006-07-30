@@ -24,7 +24,7 @@ is(
 is(
 	Games::Nintendo::Mario::SMB->new->powerup('mushroom')->state,
 	'super',
-	'mushrom in normal is super'
+	'mushroom in normal is super'
 );
 
 is(
@@ -44,7 +44,7 @@ is(
 is(
 	Games::Nintendo::Mario::SMB->new(state => 'super')->powerup('mushroom')->state,
 	'super',
-	'mushrom in super is still super'
+	'mushroom in super is still super'
 );
 
 is(
@@ -62,9 +62,15 @@ is(
 );
 
 is(
+	Games::Nintendo::Mario::SMB->new(state => 'fire')->state,
+  'fire',
+  'baptism into fire is ok',
+);
+
+is(
 	Games::Nintendo::Mario::SMB->new(state => 'fire')->powerup('mushroom')->state,
-	'super',
-	'mushrom in fire is still fire'
+	'fire',
+	'mushroom in fire is still fire'
 );
 
 is(
