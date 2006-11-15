@@ -14,26 +14,26 @@ sub _states { qw[normal super fire raccoon tanooki frog hammer pwing] }
 sub _items  { qw[mushroom flower leaf tanookisuit frogsuit hammersuit pwing] }
 
 sub _goto_hash { 
-	{
-		damage		=> {
-			normal	=> 'dead',
-			super	=> 'normal',
-			_else	=> 'super'
-		},
-		mushroom 	=> {
-			normal	=> 'super'
-		},
-		flower		=> 'fire',
-		leaf		=> 'raccoon',
-		tanookisuit	=> 'tanooki',
-		hammersuit	=> 'hammer',
-		frogsuit	=> 'frog',
-		pwing		=> 'pwing'
-	}
+  {
+    damage    => {
+      normal  => 'dead',
+      super  => 'normal',
+      _else  => 'super'
+    },
+    mushroom   => {
+      normal  => 'super'
+    },
+    flower    => 'fire',
+    leaf    => 'raccoon',
+    tanookisuit  => 'tanooki',
+    hammersuit  => 'hammer',
+    frogsuit  => 'frog',
+    pwing    => 'pwing'
+  }
 }
 
 sub games {
-	return ('Super Mario Bros. 3');
+  return ('Super Mario Bros. 3');
 }
 
 "It's-a me!  Mario!";

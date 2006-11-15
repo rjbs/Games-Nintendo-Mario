@@ -16,37 +16,37 @@ sub _other_defaults { ( max_hearts => 3, hearts => 1 ) }
 sub _goto_hash { {} } # not used by base Hearts class
 
 sub max_hearts {
-	return $_[0]->{max_hearts}
+  return $_[0]->{max_hearts}
 }
 
 sub hearts {
-	return $_[0]->{hearts}
+  return $_[0]->{hearts}
 }
 
 sub powerup {
-	my $plumber  = shift;
-	my $item     = shift;
+  my $plumber  = shift;
+  my $item     = shift;
 
-	if (($item eq 'heart') and ($plumber->hearts) and ($plumber->hearts < $plumber->max_hearts)) {
-		$plumber->{hearts}++;
-	}
-	$plumber->SUPER::powerup($item);
+  if (($item eq 'heart') and ($plumber->hearts) and ($plumber->hearts < $plumber->max_hearts)) {
+    $plumber->{hearts}++;
+  }
+  $plumber->SUPER::powerup($item);
 }
 
 sub damage {
-	my $self = shift;
-	my $item = shift;
+  my $self = shift;
+  my $item = shift;
 
-	if ($self->hearts) {
-		$self->{hearts}--;
-		$self->{state} = 'dead';
-	}
+  if ($self->hearts) {
+    $self->{hearts}--;
+    $self->{state} = 'dead';
+  }
 
-	$self->SUPER::damage;
+  $self->SUPER::damage;
 }
 
 sub games {
-	return ();
+  return ();
 }
 
 "It's-a me!  Mario!";
