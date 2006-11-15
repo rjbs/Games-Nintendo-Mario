@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package Games::Nintendo::Mario::NSMB;
 
 our $VERSION = '0.200';

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package Games::Nintendo::Mario;
 
 our $VERSION = '0.200';
