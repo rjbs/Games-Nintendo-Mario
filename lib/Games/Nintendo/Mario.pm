@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Games::Nintendo::Mario;
 
-our $VERSION = '0.200';
+our $VERSION = '0.201';
 
 =head1 NAME
 
@@ -10,7 +10,7 @@ Games::Nintendo::Mario -- a class for jumping Italian plumbers
 
 =head1 VERSION
 
-version 0.200
+version 0.201
 
   $Id$
 

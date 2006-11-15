@@ -1,3 +1,7 @@
+0.201 2006-11-13
+      packaging enhancements
+      more diagnostics on weird deaths
+
 0.200 2006-07-30
       first pass at NSMB
       bug with flower while in fire state in SMB; broken test!
