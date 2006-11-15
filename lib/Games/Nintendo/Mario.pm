@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 package Games::Nintendo::Mario;
 
 our $VERSION = '0.200';
@@ -5,6 +7,12 @@ our $VERSION = '0.200';
 =head1 NAME
 
 Games::Nintendo::Mario -- a class for jumping Italian plumbers
+
+=head1 VERSION
+
+version 0.200
+
+  $Id$
 
 =head1 SYNOPSIS
 
@@ -22,9 +30,6 @@ track of the plumber's current state and can be damaged or given powerups to
 change his state.
 
 =cut
-
-use strict;
-use warnings;
 
 use Carp qw(cluck);
 
@@ -146,7 +151,7 @@ This method accesses the name of Mario's current state.
 
 =cut
 
-sub state {
+sub state { ## no critic Homonym
   my $plumber = shift;
 
   return $plumber->{state};
@@ -166,7 +171,7 @@ sub name {
 
   return $plumber->{name} if $plumber->state eq 'normal';
 
-  my $name = $plumber->state .' '. $plumber->{name};
+  my $name = $plumber->state . q{ } . $plumber->{name};
   $name =~ s/(^.)/\u$1/;
   return $name;
 }
@@ -194,7 +199,7 @@ Games::Nintendo::Mario::Hearts base class for representing Marios that have
 hearts, like Mario from SMB2 or Wario.  After that, of course, SMB2 and Wario
 classes.
 
-=head1 AUTHORS
+=head1 AUTHOR
 
 Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
 

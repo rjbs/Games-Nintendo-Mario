@@ -1,11 +1,12 @@
+use strict;
+use warnings;
 package Games::Nintendo::Mario::NSMB;
 
 our $VERSION = '0.200';
 
 use base qw(Games::Nintendo::Mario);
 
-use strict;
-use warnings;
+use Carp ();
 
 sub _names  { qw[Mario Luigi] }
 sub _states { qw[normal super fire shell mini mega] }
@@ -62,9 +63,10 @@ sub powerup {
   my ($self, $item) = @_;
   
   my $state = $self->state;
-  die "current state unknown" unless my $state_info = $state{ $state };
+  Carp::confess "current state unknown"
+    unless my $state_info = $state{ $state };
 
-  die "behavior for $item in $state unknown"
+  Carp::confess "behavior for $item in $state unknown"
     unless my $new_state = $state_info->{$item};
   $self->_set_state($new_state, $item);
 }
@@ -81,6 +83,10 @@ __END__
 =head1 NAME
 
 Games::Nintendo::Mario::SMB -- a class for stylus-enabled Italian plumbers
+
+=head1 VERSION
+
+  $Id$
 
 =head1 SYNOPSIS
 
@@ -124,7 +130,7 @@ Nintendo DS.
 
 =back
 
-=head1 AUTHORS
+=head1 AUTHOR
 
 Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
 

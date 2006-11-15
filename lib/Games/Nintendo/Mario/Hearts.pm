@@ -1,11 +1,10 @@
+use strict;
+use warnings;
 package Games::Nintendo::Mario::Hearts;
 
 our $VERSION = '0.10';
 
 use base qw(Games::Nintendo::Mario);
-
-use strict;
-use warnings;
 
 sub _states { qw[normal] }
 sub _items  { qw[heart] }
@@ -53,7 +52,11 @@ __END__
 
 =head1 NAME
 
-Games::Nintendo::Mario::Hearts -- a superclass for Italian plubmers who can take a beating
+Games::Nintendo::Mario::Hearts - a superclass for Italian plubmers who can take a beating
+
+=head1 VERSION
+
+ $Id$
 
 =head1 SYNOPSIS
 
@@ -108,7 +111,7 @@ game.
 
 =back
 
-=head1 AUTHORS
+=head1 AUTHOR
 
 Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
 

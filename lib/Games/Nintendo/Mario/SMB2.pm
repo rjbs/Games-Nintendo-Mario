@@ -1,11 +1,10 @@
+use strict;
+use warnings;
 package Games::Nintendo::Mario::SMB2;
 
 our $VERSION = '0.10';
 
 use base qw(Games::Nintendo::Mario::Hearts);
-
-use strict;
-use warnings;
 
 sub _names  { qw[Mario Luigi Peach Toad] }
 sub _states { qw[normal] } # super isn't listed to prevent creation-as-super
@@ -37,7 +36,7 @@ sub _char_attr {
   } }
 }
 
-sub state {
+sub state { ## no critic Homonym
   my $hero = shift;
   if ($hero->hearts < 1) { return "dead" }
   if ($hero->hearts > 1) { return "super" }
@@ -70,7 +69,11 @@ __END__
 
 =head1 NAME
 
-Games::Nintendo::Mario::SMB2 -- a class for vegetable-throwing Italian plumbers (and friends)
+Games::Nintendo::Mario::SMB2 - a class for vegetable-throwing Italian plumbers (and friends)
+
+=head1 VERSION
+
+  $Id$
 
 =head1 SYNOPSIS
 

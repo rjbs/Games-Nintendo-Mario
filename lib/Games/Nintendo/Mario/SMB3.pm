@@ -1,11 +1,10 @@
+use strict;
+use warnings;
 package Games::Nintendo::Mario::SMB3;
 
 our $VERSION = '0.10';
 
 use base qw(Games::Nintendo::Mario);
-
-use strict;
-use warnings;
 
 sub _names  { qw[Mario Luigi] }
 sub _states { qw[normal super fire raccoon tanooki frog hammer pwing] }
@@ -41,6 +40,10 @@ __END__
 =head1 NAME
 
 Games::Nintendo::Mario::SMB3 -- a class for fuzzy-tailed Italian plumbers
+
+=head1 VERSION
+
+  $Id$
 
 =head1 SYNOPSIS
 
@@ -90,7 +93,7 @@ This ruleset reflects Mario in Super Mario Bros. 3.
 =back
 
 
-=head1 AUTHORS
+=head1 AUTHOR
 
 Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
 
