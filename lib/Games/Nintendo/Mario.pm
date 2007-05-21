@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Games::Nintendo::Mario;
 
-our $VERSION = '0.201';
+our $VERSION = '0.202';
 
 =head1 NAME
 

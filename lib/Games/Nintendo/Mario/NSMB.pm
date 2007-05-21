@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Games::Nintendo::Mario::NSMB;
 
-our $VERSION = '0.200';
+our $VERSION = '0.202';
 
 use base qw(Games::Nintendo::Mario);
 
@@ -82,7 +82,7 @@ __END__
 
 =head1 NAME
 
-Games::Nintendo::Mario::SMB -- a class for stylus-enabled Italian plumbers
+Games::Nintendo::Mario::NSMB -- a class for stylus-enabled Italian plumbers
 
 =head1 VERSION
 
@@ -90,7 +90,7 @@ Games::Nintendo::Mario::SMB -- a class for stylus-enabled Italian plumbers
 
 =head1 SYNOPSIS
 
-  use Games::Nintendo::Mario::SMB;
+  use Games::Nintendo::Mario::NSMB;
 
   my $hero = new Games::Nintendo::Mario::SMB
                    name  => 'Luigi',
@@ -104,8 +104,8 @@ Games::Nintendo::Mario::SMB -- a class for stylus-enabled Italian plumbers
 =head1 DESCRIPTION
 
 This class subclasses Games::Nintendo::Mario, providing a model of the behavior
-of the Mario Brothers in Super Mario Brothers.  All of the methods described in
-the Mario interface exist as documented.
+of the Mario Brothers in New Super Mario Brothers.  All of the methods
+described in the Mario interface exist as documented.
 
 =head2 NAMES
 
@@ -136,7 +136,7 @@ Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright 2006 by Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
+Copyright 2006-2007 by Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
 
 This program is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.

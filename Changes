@@ -1,18 +1,21 @@
-0.201 2006-11-13
-      packaging enhancements
-      more diagnostics on weird deaths
+0.202     2007-05-20
+          fix typo in NSMB docs
 
-0.200 2006-07-30
-      first pass at NSMB
-      bug with flower while in fire state in SMB; broken test!
+0.201     2006-11-13
+          packaging enhancements
+          more diagnostics on weird deaths
 
-0.10  2004-09-21 09:40
-      minor cleanup
-      more documenation
-      test revisions
+0.200     2006-07-30
+          first pass at NSMB
+          bug with flower while in fire state in SMB; broken test!
 
-0.02  2003-12-08
-      second release, cleanup of the first
+0.10      2004-09-21 09:40
+          minor cleanup
+          more documenation
+          test revisions
 
-0.01  2003-12-06
-      first release
+0.02      2003-12-08
+          second release, cleanup of the first
+
+0.01      2003-12-06
+          first release
