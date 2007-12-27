@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Games::Nintendo::Mario::SMB2;
 
-our $VERSION = '0.10';
+our $VERSION = '0.203';
 
 use base qw(Games::Nintendo::Mario::Hearts);
 
@@ -73,7 +73,7 @@ Games::Nintendo::Mario::SMB2 - a class for vegetable-throwing Italian plumbers (
 
 =head1 VERSION
 
-  $Id$
+version 0.203
 
 =head1 SYNOPSIS
 

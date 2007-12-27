@@ -2,13 +2,15 @@ use strict;
 use warnings;
 package Games::Nintendo::Mario::Hearts;
 
-our $VERSION = '0.10';
+our $VERSION = '0.203';
 
 use base qw(Games::Nintendo::Mario);
+use Hash::Util::FieldHash qw(fieldhash);
 
 sub _states { qw[normal] }
 sub _items  { qw[heart] }
-sub _other_defaults { ( max_hearts => 3, hearts => 1 ) }
+sub _other_defaults  { ( max_hearts => 3 ) }
+sub __default_hearts { 1 };
 
 sub _goto_hash { {} } # not used by base Hearts class
 
@@ -16,8 +18,11 @@ sub max_hearts {
   return $_[0]->{max_hearts}
 }
 
+fieldhash my %hearts;
 sub hearts {
-  return $_[0]->{hearts}
+  my ($self) = @_;
+  $hearts{ $self } //= $self->__default_hearts;
+  return $hearts{ $self };
 }
 
 sub powerup {
@@ -25,7 +30,7 @@ sub powerup {
   my $item     = shift;
 
   if (($item eq 'heart') and ($plumber->hearts) and ($plumber->hearts < $plumber->max_hearts)) {
-    $plumber->{hearts}++;
+    $hearts{ $plumber }++;
   }
   $plumber->SUPER::powerup($item);
 }
@@ -35,8 +40,7 @@ sub damage {
   my $item = shift;
 
   if ($self->hearts) {
-    $self->{hearts}--;
-    $self->{state} = 'dead';
+    $self->{state} = 'dead' unless --$hearts{ $self };
   }
 
   $self->SUPER::damage;
@@ -56,7 +60,7 @@ Games::Nintendo::Mario::Hearts - a superclass for Italian plubmers who can take 
 
 =head1 VERSION
 
- $Id$
+version 0.203
 
 =head1 SYNOPSIS
 
