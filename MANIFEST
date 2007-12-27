@@ -1,5 +1,6 @@
 lib/Games/Nintendo/Mario.pm
 lib/Games/Nintendo/Mario/SMB.pm
+lib/Games/Nintendo/Mario/SMBTLL.pm
 lib/Games/Nintendo/Mario/SMB2.pm
 lib/Games/Nintendo/Mario/SMB3.pm
 lib/Games/Nintendo/Mario/NSMB.pm
@@ -13,6 +14,7 @@ t/base.t
 t/hearts.t
 t/nsmb.t
 t/smb.t
+t/smbtll.t
 t/smb2.t
 t/smb3.t
 t/pod.t
