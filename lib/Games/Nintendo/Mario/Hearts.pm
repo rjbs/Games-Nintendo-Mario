@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Games::Nintendo::Mario::Hearts;
 
-our $VERSION = '0.203';
+our $VERSION = '0.204';
 
 use base qw(Games::Nintendo::Mario);
 use Hash::Util::FieldHash qw(fieldhash);
@@ -60,7 +60,7 @@ Games::Nintendo::Mario::Hearts - a superclass for Italian plubmers who can take 
 
 =head1 VERSION
 
-version 0.203
+version 0.204
 
 =head1 SYNOPSIS
 
