@@ -1,16 +1,14 @@
-use strict;
+use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::SMB3;
+package Games::Nintendo::Mario::SMB3 0.205;
 
-our $VERSION = '0.204';
-
-use base qw(Games::Nintendo::Mario);
+use parent qw(Games::Nintendo::Mario);
 
 sub _names  { qw[Mario Luigi] }
 sub _states { qw[normal super fire raccoon tanooki frog hammer pwing] }
 sub _items  { qw[mushroom flower leaf tanookisuit frogsuit hammersuit pwing] }
 
-sub _goto_hash { 
+sub _goto_hash {
   {
     damage    => {
       normal  => 'dead',
@@ -39,11 +37,11 @@ __END__
 
 =head1 NAME
 
-Games::Nintendo::Mario::SMB3 -- a class for fuzzy-tailed Italian plumbers
+Games::Nintendo::Mario::SMB3 - a class for fuzzy-tailed Italian plumbers
 
 =head1 VERSION
 
-version 0.204
+version 0.205
 
 =head1 SYNOPSIS
 
@@ -84,14 +82,9 @@ C<hammersuit>, C<frogsuit>, or C<pwing>
 
 =head1 METHODS
 
-=over 4
-
-=item C<games>
+=head2 C<games>
 
 This ruleset reflects Mario in Super Mario Bros. 3.
-
-=back
-
 
 =head1 AUTHOR
 

@@ -1,10 +1,8 @@
-use strict;
+use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::Hearts;
+package Games::Nintendo::Mario::Hearts 0.205;
 
-our $VERSION = '0.204';
-
-use base qw(Games::Nintendo::Mario);
+use parent qw(Games::Nintendo::Mario);
 use Hash::Util::FieldHash qw(fieldhash);
 
 sub _states { qw[normal] }
@@ -60,7 +58,7 @@ Games::Nintendo::Mario::Hearts - a superclass for Italian plubmers who can take 
 
 =head1 VERSION
 
-version 0.204
+version 0.205
 
 =head1 SYNOPSIS
 
@@ -92,23 +90,23 @@ the only powerup in this class is 'heart' and the only state is 'normal'
 
 =over
 
-=item C<< hearts >>
+=item hearts
 
 This method returns the number of hearts the plumber currently has.  It
 defaults to 1 at creation.
 
-=item C<< max_hearts >>
+=item max_hearts
 
 This method returns the number of heart containers currently in the plumber's
 heart meter.  It defaults to 3 at creation.
 
-=item C<< damage >>
+=item damage
 
-=item C<< powerup >>
+=item powerup
 
 These methods are defined in Games::Nintendo::Mario.
 
-=item C<< games >>
+=item games
 
 This is an abstract subclass for Mario classes, and does not represent any one
 game.

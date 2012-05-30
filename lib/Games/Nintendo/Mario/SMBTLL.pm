@@ -1,14 +1,12 @@
-use strict;
+use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::SMBTLL;
+package Games::Nintendo::Mario::SMBTLL 0.205;
 
-our $VERSION = '0.204';
-
-use base qw(Games::Nintendo::Mario::SMB);
+use parent qw(Games::Nintendo::Mario::SMB);
 
 sub _items  { qw[mushroom flower poison_mushroom] }
 
-sub _goto_hash { 
+sub _goto_hash {
   my ($self) = @_;
 
   my $goto_hash = $self->SUPER::_goto_hash;
@@ -36,7 +34,7 @@ Games::Nintendo::Mario::SMBTLL - a class for long-lost Italian plumbers
 
 =head1 VERSION
 
-version 0.204
+version 0.205
 
 =head1 SYNOPSIS
 
@@ -45,7 +43,7 @@ version 0.204
   my $hero = new Games::Nintendo::Mario::SMB
                    name  => 'Luigi',
                    state => 'normal';
-  
+
   $hero->powerup('mushroom'); # doop doop doop!
   $hero->powerup('flower');   # change clothes
 
@@ -72,15 +70,11 @@ Valid powerups are: C<mushroom>, C<poison_mushroom>, and C<flower>
 
 =head1 METHODS
 
-=over 4
-
-=item C<games>
+=head2 C<games>
 
 This ruleset reflects Mario in Super Mario Bros.: The Lost Levels, the original
 Japanese sequel to SMB, later released as SMBTLL in the US (and now available
 on the Wii Virtual Console).
-
-=back
 
 =head1 AUTHOR
 

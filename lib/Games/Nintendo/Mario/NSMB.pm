@@ -1,10 +1,8 @@
-use strict;
+use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::NSMB;
+package Games::Nintendo::Mario::NSMB 0.205;
 
-our $VERSION = '0.204';
-
-use base qw(Games::Nintendo::Mario);
+use parent qw(Games::Nintendo::Mario);
 
 use Carp ();
 
@@ -61,7 +59,7 @@ sub _set_state {
 
 sub powerup {
   my ($self, $item) = @_;
-  
+
   my $state = $self->state;
   Carp::confess "current state unknown"
     unless my $state_info = $state{ $state };
@@ -82,11 +80,11 @@ __END__
 
 =head1 NAME
 
-Games::Nintendo::Mario::NSMB -- a class for stylus-enabled Italian plumbers
+Games::Nintendo::Mario::NSMB - a class for stylus-enabled Italian plumbers
 
 =head1 VERSION
 
-version 0.204
+version 0.205
 
 =head1 SYNOPSIS
 

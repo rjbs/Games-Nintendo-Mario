@@ -1,8 +1,6 @@
-use strict;
+use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::SMB;
-
-our $VERSION = '0.204';
+package Games::Nintendo::Mario::SMB 0.205;
 
 use base qw(Games::Nintendo::Mario);
 
@@ -10,7 +8,7 @@ sub _names  { qw[Mario Luigi] }
 sub _states { qw[normal super fire] }
 sub _items  { qw[mushroom flower] }
 
-sub _goto_hash { 
+sub _goto_hash {
   {
     damage => {
       normal => 'dead',
@@ -41,7 +39,7 @@ Games::Nintendo::Mario::SMB - a class for mushroom-eating Italian plumbers
 
 =head1 VERSION
 
-version 0.204
+version 0.205
 
 =head1 SYNOPSIS
 

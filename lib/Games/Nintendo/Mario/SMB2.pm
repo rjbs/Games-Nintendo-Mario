@@ -1,8 +1,6 @@
-use strict;
+use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::SMB2;
-
-our $VERSION = '0.204';
+package Games::Nintendo::Mario::SMB2 0.205;
 
 use base qw(Games::Nintendo::Mario::Hearts);
 
@@ -14,22 +12,22 @@ sub _goto_hash {  {} }
 
 sub _char_attr {
   {
-  Mario => { 
+  Mario => {
     power => 4,
     speed => 4,
     jump  => 4
   },
-  Luigi => { 
+  Luigi => {
     power => 3,
     speed => 3,
     jump  => 5
   },
-  Peach => { 
+  Peach => {
     power => 2,
     speed => 2,
     jump  => 3
   },
-  Toad => { 
+  Toad => {
     power => 5,
     speed => 5,
     jump  => 2
@@ -73,14 +71,14 @@ Games::Nintendo::Mario::SMB2 - a class for vegetable-throwing Italian plumbers (
 
 =head1 VERSION
 
-version 0.204
+version 0.205
 
 =head1 SYNOPSIS
 
   use Games::Nintendo::Mario::SMB2;
 
   my $liege = Games::Nintendo::Mario::SMB2->new(name => 'Peach');
-  
+
   # below outputs "Peach: 1/3"
   print
     $liege->name . ": " . $liege->hearts . "/" . $liege->max_hearts . "\n";
@@ -121,30 +119,26 @@ Valid powerups are: C<mushroom> or C<heart>
 
 =head1 METHODS
 
-=over 4
+=head2 C<state>
 
-=item C<state>
+=head2 C<name>
 
-=item C<name>
-
-=item C<powerup>
+=head2 C<powerup>
 
 These methods are implemented as per Games::Nintendo::Mario
 
-=item C<power>
+=head2 C<power>
 
-=item C<speed>
+=head2 C<speed>
 
-=item C<jump>
+=head2 C<jump>
 
 These methods return the requested attribute for the current character.
 
-=item C<games>
+=head2 C<games>
 
 The rules reflected in this module were only present in Super Mario Bros. 2
 (and its re-releases).
-
-=back
 
 =head1 AUTHOR
 
