@@ -47,9 +47,10 @@ version 0.205
 
   use Games::Nintendo::Mario::SMB3;
 
-  my $hero = new Games::Nintendo::Mario::SMB
-                   name  => 'Mario',
-                   state => 'hammer';
+  my $hero = Games::Nintendo::Mario::SMB->new(
+    name  => 'Mario',
+    state => 'hammer',
+  );
   
   $hero->powerup('mushroom'); # Nothing happens.
   $hero->damage;              # back to super

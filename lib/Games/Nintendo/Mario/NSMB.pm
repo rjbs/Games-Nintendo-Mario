@@ -90,10 +90,11 @@ version 0.205
 
   use Games::Nintendo::Mario::NSMB;
 
-  my $hero = new Games::Nintendo::Mario::SMB
-                   name  => 'Luigi',
-                   state => 'normal';
-  
+  my $hero = Games::Nintendo::Mario::SMB->new(
+   name  => 'Luigi',
+   state => 'normal',
+  );
+
   $hero->powerup('mushroom'); # doop doop doop!
   $hero->powerup('flower');   # change clothes
 

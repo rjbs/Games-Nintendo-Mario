@@ -64,7 +64,7 @@ version 0.205
 
   use Games::Nintendo::Mario::Hearts;
 
-  my $noone = new Games::Nintendo::Mario::Hearts;
+  my $noone = Games::Nintendo::Mario::Hearts->new;
   
   print $hero->hearts . '/' . $hero->max_hearts; # at 1/3 health
   $hero->powerup('heart');                       # up to 2/3!
