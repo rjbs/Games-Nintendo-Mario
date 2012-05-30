@@ -1,8 +1,6 @@
-use strict;
+use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario;
-
-our $VERSION = '0.204';
+package Games::Nintendo::Mario 0.204;
 
 =head1 NAME
 
