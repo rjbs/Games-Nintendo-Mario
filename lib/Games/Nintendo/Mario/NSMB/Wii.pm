@@ -77,6 +77,11 @@ Games::Nintendo::Mario::NSMB::Wii - a class for Italian plumbers who wave their 
 
 version 0.205
 
+=head1 WARNING!!
+
+Nobody has given RJBS a copy of NSMB Wii yet, so he hasn't played it, so this
+class may not be an accurate reflection of its behavior.
+
 =head1 SYNOPSIS
 
   use Games::Nintendo::Mario::NSMB::Wii;

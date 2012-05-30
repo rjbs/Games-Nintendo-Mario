@@ -1,6 +1,6 @@
 use ExtUtils::MakeMaker;
 
-use 5.010;
+use 5.016;
 
 WriteMakefile(
   NAME          => 'Games::Nintendo::Mario',
