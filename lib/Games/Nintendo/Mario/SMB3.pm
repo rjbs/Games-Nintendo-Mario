@@ -41,7 +41,7 @@ Games::Nintendo::Mario::SMB3 - a class for fuzzy-tailed Italian plumbers
 
 =head1 VERSION
 
-version 0.206
+version 0.207
 
 =head1 SYNOPSIS
 

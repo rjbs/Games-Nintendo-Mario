@@ -34,7 +34,7 @@ Games::Nintendo::Mario::SMBTLL - a class for long-lost Italian plumbers
 
 =head1 VERSION
 
-version 0.206
+version 0.207
 
 =head1 SYNOPSIS
 

@@ -71,7 +71,7 @@ Games::Nintendo::Mario::SMB2 - a class for vegetable-throwing Italian plumbers (
 
 =head1 VERSION
 
-version 0.206
+version 0.207
 
 =head1 SYNOPSIS
 
