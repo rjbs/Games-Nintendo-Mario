@@ -1,5 +1,20 @@
 Revision history for Games-Nintendo-Mario
 
+{{$NEXT}}
+          [IMPORTANT]
+        - This may be the last update to Games-Nintendo-Mario!  Although I
+          receive dozens of support requests or letters of appreciation each
+          day about this code, I receive very few patches, including those to
+          bring the library up to date with modern Mario standards such as
+          NSMB2 or NSMBU, let alone NSLU.  Although I am happy to continue
+          supporting this library's dedicated userbase, I cannot do so without
+          hardware for comparison testing.  Donations of a Wii U or 3DS console
+          would certainly lead to new versions, and hopefully to the
+          long-awaited Games::Nintendo::Metroid.
+
+          [LESS IMPORTANT]
+        - update bugtracker and repository
+
 0.205     2012-05-30
           add New Super Mario Bros. Wii
 
