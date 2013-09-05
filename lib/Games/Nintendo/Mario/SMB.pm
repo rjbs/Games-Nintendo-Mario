@@ -1,6 +1,6 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::SMB 0.207;
+package Games::Nintendo::Mario::SMB 0.208;
 
 use base qw(Games::Nintendo::Mario);
 
@@ -39,7 +39,7 @@ Games::Nintendo::Mario::SMB - a class for mushroom-eating Italian plumbers
 
 =head1 VERSION
 
-version 0.207
+version 0.208
 
 =head1 SYNOPSIS
 

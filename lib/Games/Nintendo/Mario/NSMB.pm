@@ -1,6 +1,6 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::NSMB 0.207;
+package Games::Nintendo::Mario::NSMB 0.208;
 
 use parent qw(Games::Nintendo::Mario);
 
@@ -84,7 +84,7 @@ Games::Nintendo::Mario::NSMB - a class for stylus-enabled Italian plumbers
 
 =head1 VERSION
 
-version 0.207
+version 0.208
 
 =head1 SYNOPSIS
 

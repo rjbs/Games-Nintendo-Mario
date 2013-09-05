@@ -1,6 +1,6 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::SMBTLL 0.207;
+package Games::Nintendo::Mario::SMBTLL 0.208;
 
 use parent qw(Games::Nintendo::Mario::SMB);
 
@@ -34,7 +34,7 @@ Games::Nintendo::Mario::SMBTLL - a class for long-lost Italian plumbers
 
 =head1 VERSION
 
-version 0.207
+version 0.208
 
 =head1 SYNOPSIS
 

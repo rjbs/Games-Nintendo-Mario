@@ -1,6 +1,6 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::Hearts 0.207;
+package Games::Nintendo::Mario::Hearts 0.208;
 
 use parent qw(Games::Nintendo::Mario);
 use Hash::Util::FieldHash qw(fieldhash);
@@ -58,7 +58,7 @@ Games::Nintendo::Mario::Hearts - a superclass for Italian plubmers who can take 
 
 =head1 VERSION
 
-version 0.207
+version 0.208
 
 =head1 SYNOPSIS
 

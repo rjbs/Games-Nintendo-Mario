@@ -1,6 +1,6 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::SMB3 0.207;
+package Games::Nintendo::Mario::SMB3 0.208;
 
 use parent qw(Games::Nintendo::Mario);
 
@@ -41,7 +41,7 @@ Games::Nintendo::Mario::SMB3 - a class for fuzzy-tailed Italian plumbers
 
 =head1 VERSION
 
-version 0.207
+version 0.208
 
 =head1 SYNOPSIS
 

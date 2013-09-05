@@ -1,6 +1,6 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::NSMB::Wii 0.207;
+package Games::Nintendo::Mario::NSMB::Wii 0.208;
 
 use parent qw(Games::Nintendo::Mario::NSMB);
 
@@ -75,7 +75,7 @@ Games::Nintendo::Mario::NSMB::Wii - a class for Italian plumbers who wave their 
 
 =head1 VERSION
 
-version 0.207
+version 0.208
 
 =head1 WARNING!!
 
