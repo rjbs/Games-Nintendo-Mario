@@ -58,7 +58,7 @@ Games::Nintendo::Mario::Hearts - a superclass for Italian plubmers who can take 
 
 =head1 VERSION
 
-version 0.205
+version 0.206
 
 =head1 SYNOPSIS
 

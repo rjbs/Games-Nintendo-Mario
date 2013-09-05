@@ -75,7 +75,7 @@ Games::Nintendo::Mario::NSMB::Wii - a class for Italian plumbers who wave their 
 
 =head1 VERSION
 
-version 0.205
+version 0.206
 
 =head1 WARNING!!
 

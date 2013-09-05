@@ -84,7 +84,7 @@ Games::Nintendo::Mario::NSMB - a class for stylus-enabled Italian plumbers
 
 =head1 VERSION
 
-version 0.205
+version 0.206
 
 =head1 SYNOPSIS
 
