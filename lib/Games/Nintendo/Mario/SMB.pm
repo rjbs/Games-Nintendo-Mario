@@ -1,6 +1,6 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::SMB 0.205;
+package Games::Nintendo::Mario::SMB 0.207;
 
 use base qw(Games::Nintendo::Mario);
 

@@ -1,6 +1,6 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::Hearts 0.205;
+package Games::Nintendo::Mario::Hearts 0.207;
 
 use parent qw(Games::Nintendo::Mario);
 use Hash::Util::FieldHash qw(fieldhash);

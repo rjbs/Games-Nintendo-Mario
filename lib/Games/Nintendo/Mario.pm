@@ -1,6 +1,7 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario 0.205;
+package Games::Nintendo::Mario 0.207;
+our $VERSON = 0.207; # <-- for PAUSE indexer
 
 =head1 NAME
 

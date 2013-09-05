@@ -1,6 +1,6 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::SMBTLL 0.205;
+package Games::Nintendo::Mario::SMBTLL 0.207;
 
 use parent qw(Games::Nintendo::Mario::SMB);
 

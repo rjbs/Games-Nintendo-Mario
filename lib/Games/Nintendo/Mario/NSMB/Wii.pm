@@ -1,6 +1,6 @@
 use 5.16.0;
 use warnings;
-package Games::Nintendo::Mario::NSMB::Wii 0.205;
+package Games::Nintendo::Mario::NSMB::Wii 0.207;
 
 use parent qw(Games::Nintendo::Mario::NSMB);
 
