@@ -1,40 +1,9 @@
-use 5.16.0;
+use 5.20.0;
 use warnings;
-package Games::Nintendo::Mario::SMBTLL 0.208;
+package Games::Nintendo::Mario::SMBTLL;
+# ABSTRACT: a class for long-lost Italian plumbers
 
 use parent qw(Games::Nintendo::Mario::SMB);
-
-sub _items  { qw[mushroom flower poison_mushroom] }
-
-sub _goto_hash {
-  my ($self) = @_;
-
-  my $goto_hash = $self->SUPER::_goto_hash;
-
-  return {
-    %$goto_hash,
-    poison_mushroom => $goto_hash->{damage}
-  }
-}
-
-sub games {
-  return (
-    'Super Mario Bros.: The Lost Levels',
-    # 'Super Mario Bros. 2: For Super Players',
-  );
-}
-
-"It's-a me!  Mario!";
-
-__END__
-
-=head1 NAME
-
-Games::Nintendo::Mario::SMBTLL - a class for long-lost Italian plumbers
-
-=head1 VERSION
-
-version 0.208
 
 =head1 SYNOPSIS
 
@@ -69,26 +38,32 @@ The plumber's state may be any of: C<normal>, C<super>, or C<fire>
 
 Valid powerups are: C<mushroom>, C<poison_mushroom>, and C<flower>
 
-=head1 METHODS
-
-=head2 C<games>
+=method games
 
 This ruleset reflects Mario in Super Mario Bros.: The Lost Levels, the original
 Japanese sequel to SMB, later released as SMBTLL in the US (and now available
 on the Wii Virtual Console).
 
-=head1 AUTHOR
-
-Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
-
-=head1 COPYRIGHT
-
-Copyright 2007 by Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
-
-This program is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
-
-See http://www.perl.com/perl/misc/Artistic.html
-
 =cut
 
+sub _items  { qw[mushroom flower poison_mushroom] }
+
+sub _goto_hash {
+  my ($self) = @_;
+
+  my $goto_hash = $self->SUPER::_goto_hash;
+
+  return {
+    %$goto_hash,
+    poison_mushroom => $goto_hash->{damage}
+  }
+}
+
+sub games {
+  return (
+    'Super Mario Bros.: The Lost Levels',
+    # 'Super Mario Bros. 2: For Super Players',
+  );
+}
+
+"It's-a me!  Mario!";

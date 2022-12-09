@@ -1,47 +1,9 @@
-use 5.16.0;
+use 5.20.0;
 use warnings;
-package Games::Nintendo::Mario::SMB3 0.208;
+package Games::Nintendo::Mario::SMB3;
+# ABSTRACT: a class for fuzzy-tailed Italian plumbers
 
 use parent qw(Games::Nintendo::Mario);
-
-sub _names  { qw[Mario Luigi] }
-sub _states { qw[normal super fire raccoon tanooki frog hammer pwing] }
-sub _items  { qw[mushroom flower leaf tanookisuit frogsuit hammersuit pwing] }
-
-sub _goto_hash {
-  {
-    damage    => {
-      normal  => 'dead',
-      super  => 'normal',
-      _else  => 'super'
-    },
-    mushroom   => {
-      normal  => 'super'
-    },
-    flower    => 'fire',
-    leaf    => 'raccoon',
-    tanookisuit  => 'tanooki',
-    hammersuit  => 'hammer',
-    frogsuit  => 'frog',
-    pwing    => 'pwing'
-  }
-}
-
-sub games {
-  return ('Super Mario Bros. 3');
-}
-
-"It's-a me!  Mario!";
-
-__END__
-
-=head1 NAME
-
-Games::Nintendo::Mario::SMB3 - a class for fuzzy-tailed Italian plumbers
-
-=head1 VERSION
-
-version 0.208
 
 =head1 SYNOPSIS
 
@@ -81,24 +43,37 @@ C<tanooki>, C<hammer>, C<frog>, or C<pwing>
 Valid powerups are: C<mushroom>, C<flower>, C<leaf>, C<tanookisuit>,
 C<hammersuit>, C<frogsuit>, or C<pwing>
 
-=head1 METHODS
-
-=head2 C<games>
+=method games
 
 This ruleset reflects Mario in Super Mario Bros. 3.
 
-=head1 AUTHOR
-
-Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
-
-=head1 COPYRIGHT
-
-Copyright 2003 by Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
-
-This program is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
-
-See http://www.perl.com/perl/misc/Artistic.html
-
 =cut
 
+sub _names  { qw[Mario Luigi] }
+sub _states { qw[normal super fire raccoon tanooki frog hammer pwing] }
+sub _items  { qw[mushroom flower leaf tanookisuit frogsuit hammersuit pwing] }
+
+sub _goto_hash {
+  {
+    damage    => {
+      normal  => 'dead',
+      super  => 'normal',
+      _else  => 'super'
+    },
+    mushroom   => {
+      normal  => 'super'
+    },
+    flower    => 'fire',
+    leaf    => 'raccoon',
+    tanookisuit  => 'tanooki',
+    hammersuit  => 'hammer',
+    frogsuit  => 'frog',
+    pwing    => 'pwing'
+  }
+}
+
+sub games {
+  return ('Super Mario Bros. 3');
+}
+
+"It's-a me!  Mario!";

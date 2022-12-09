@@ -1,15 +1,7 @@
-use 5.16.0;
+use 5.20.0;
 use warnings;
 package Games::Nintendo::Mario;
-our $VERSION = 0.208; # <-- for PAUSE indexer
-
-=head1 NAME
-
-Games::Nintendo::Mario - a class for jumping Italian plumbers
-
-=head1 VERSION
-
-version 0.208
+# ABSTRACT: a class for jumping Italian plumbers
 
 =head1 SYNOPSIS
 
@@ -50,9 +42,7 @@ sub _goto {
   return $goto->{$item}{$state};
 }
 
-=head1 METHODS
-
-=head2 C<new>
+=method new
 
   my $hero = Games::Nintendo::Mario->new(name => 'Luigi');
 
@@ -87,7 +77,7 @@ sub new {
   bless $plumber => $class;
 }
 
-=head2 C<powerup>
+=method powerup
 
   $hero->powerup('hammer'); # this won't work
 
@@ -118,7 +108,7 @@ sub powerup {
   return $plumber;
 }
 
-=head2 C<damage>
+=method damage
 
   $hero->damage;
 
@@ -138,10 +128,10 @@ sub damage {
   return $plumber;
 }
 
-=head2 C<state>
+=method state
 
   print $hero->state;
-  
+
 This method accesses the name of Mario's current state.
 
 =cut
@@ -152,7 +142,7 @@ sub state { ## no critic Homonym
   return $plumber->{state};
 }
 
-=head2 C<name>
+=method name
 
   print $hero->name;
 
@@ -171,7 +161,7 @@ sub name {
   return $name;
 }
 
-=head2 C<games>
+=method games
 
   if (grep /World/, $hero->games) { ... }
 
@@ -184,23 +174,10 @@ sub games {
   return ('Mario Bros.');
 }
 
-"It's-a me!  Mario!";
-
 =head1 TODO
 
 Wario, SMW.
 
-=head1 AUTHOR
-
-Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
-
-=head1 COPYRIGHT
-
-Copyright 2003 by Ricardo SIGNES E<lt>rjbs@cpan.orgE<gt>
-
-This program is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
-
-See http://www.perl.com/perl/misc/Artistic.html
-
 =cut
+
+"It's-a me!  Mario!";
